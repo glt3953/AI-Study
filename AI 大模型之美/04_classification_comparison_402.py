@@ -5,8 +5,8 @@ from openai.embeddings_utils import cosine_similarity
 import torch
 
 # load the T5 tokenizer and model
-tokenizer = T5Tokenizer.from_pretrained('t5-base', model_max_length=512)
-model = T5Model.from_pretrained('t5-base')
+tokenizer = T5Tokenizer.from_pretrained('t5-large', model_max_length=512)
+model = T5Model.from_pretrained('t5-large')
 
 # set the model to evaluation mode
 model.eval()
