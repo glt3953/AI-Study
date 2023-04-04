@@ -1,2 +1,3 @@
 # AI-Study
-AI相关课程学习
+## AI 大模型之美
+启动Notebook 环境：jupyter-lab .
