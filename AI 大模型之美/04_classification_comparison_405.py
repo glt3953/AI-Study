@@ -1,7 +1,7 @@
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 
-model = T5ForConditionalGeneration.from_pretrained('t5-base')
-tokenizer = T5Tokenizer.from_pretrained('t5-base', model_max_length=512)
+model = T5ForConditionalGeneration.from_pretrained('t5-large')
+tokenizer = T5Tokenizer.from_pretrained('t5-large', model_max_length=512)
 
 def generate_answer(question):
     # input_text = 'answer: ' + question + ' </s>'
