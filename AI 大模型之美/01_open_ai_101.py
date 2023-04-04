@@ -1,7 +1,7 @@
 import openai
 import os
 
-openai.api_key = "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"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 COMPLETION_MODEL = "text-davinci-003"
 
 prompt = """
