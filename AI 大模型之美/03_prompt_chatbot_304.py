@@ -1,14 +1,19 @@
-
+#依赖tiktoken：pip install tiktoken，使用不同的 GPT 模型，对应着不同的 Tiktoken 的编码器模型：https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb。
+import tiktoken
 import openai
 import os
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
+encoding = tiktoken.get_encoding("p50k_base")
 
 def ask_gpt3(prompt):
+    if len(encoding.encode(prompt)) > 512:
+        return "输入的文字过长，请精简后再提问"
+            
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
-        max_tokens=512,
+        max_tokens=3580,
         n=1,
         stop=None,
         temperature=0.5,

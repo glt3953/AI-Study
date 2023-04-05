@@ -1,3 +1,5 @@
+#安装一下 Python 的 Gradio 的包：conda install -c conda-forge gradio
+import gradio as gr
 import os
 import openai
 
@@ -21,6 +23,17 @@ def paint(prompt):
     return response
 
 print("你是一位画家，需要根据用户的描述画出两幅作品，提供相应的url地址")
+
+with gr.Blocks(css="#chatbot{height:300px} .overflow-y-auto{height:500px}") as demo:
+    chatbot = gr.Chatbot(elem_id="chatbot")
+    state = gr.State([])
+
+    with gr.Row():
+        txt = gr.Textbox(show_label=False, placeholder="Enter text and press enter").style(container=False)
+
+    txt.submit(answer, [txt, state], [chatbot, state])
+
+demo.launch()
 
 while True:
     user_input = input("> ")
