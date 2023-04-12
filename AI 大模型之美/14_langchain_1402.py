@@ -28,5 +28,5 @@ answer_translate_chain = LLMChain(llm=llm, prompt=zh_to_cn_prompt)
 chinese_qa_chain = SimpleSequentialChain(
     chains=[question_translate_chain, qa_chain, answer_translate_chain], input_key="question",
     verbose=True)
-answer = chinese_qa_chain.run(question="请你作为一个机器学习的专家，介绍一下CNN的原理。")
+answer = chinese_qa_chain.run(question="请你作为一个机器学习的专家，介绍一下GPT的原理。")
 print(answer)
