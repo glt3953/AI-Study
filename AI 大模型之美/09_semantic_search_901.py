@@ -15,8 +15,8 @@ def generate_data_by_prompt(prompt):
     )
     return response.choices[0].text
 
-prompt = """请你生成50条淘宝网里的商品的标题，每条在30个字左右，品类是3C数码产品，标题里往往也会有一些促销类的信息，每行一条。"""
-#prompt = """请你生成50条京东商城里最受欢迎的小家电信息，包含购物链接，每条在30个字左右，每行一条。"""
+#prompt = """请你生成50条淘宝网里的商品的标题，每条在30个字左右，品类是3C数码产品，标题里往往也会有一些促销类的信息，每行一条。"""
+prompt = """请你生成50条淘宝网最受欢迎的小家电购物链接，价格在50-300元，每行一条，每条在100个字左右。"""
 data = generate_data_by_prompt(prompt)
 product_names = data.strip().split('\n')
 df = pd.DataFrame({'product_name': product_names})
@@ -34,6 +34,7 @@ df.head()
 df = df.reset_index(drop=True)
 display(df)
 #df.to_parquet("data/taobao_product_info.parquet", index=False)
-df.to_csv('data/100_productsinfo.csv', index=False)
+#df.to_csv('data/100_productsinfo.csv', index=False)
+df.to_csv('data/taobao_small_productsinfo.csv', index=False)
 #out = pd.merge(df, targets, left_on='target', right_index=True)
 #out.to_csv('100_productsinfo.csv', index=False)
