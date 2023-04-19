@@ -1,6 +1,6 @@
 import whisper
 
-model = whisper.load_model("small") #tiny、base、small、medium、large
+model = whisper.load_model("medium") #tiny、base、small、medium（可用）、large
 index = 1 # number of fi
   
 def transcript(clip, prompt, output):
@@ -13,7 +13,7 @@ original_prompt = "这是一段Onboard播客，里面会聊到ChatGPT以及PALM�
 prompt = original_prompt
 for i in range(index):
     clip = f"./data/podcast_clip.mp3"
-    output = f"./data/podcast_clip_small.txt"
+    output = f"./data/podcast_clip_medium.txt"
     transcript(clip, prompt, output)
     # get last sentence of the transcript
     with open(output, "r") as f:
