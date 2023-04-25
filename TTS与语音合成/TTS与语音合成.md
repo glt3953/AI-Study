@@ -7,7 +7,7 @@ https://www.xfyun.cn/services/online_tts
 https://ai.aliyun.com/nls/tts
 ## 百度
 https://ai.baidu.com/tech/speech/tts
-### 开源的 PaddleSpeech 的语音合成
+### 开源 PaddleSpeech 的语音合成
 1. 安装 PaddleSpeech 相关的 Python 包
 ```
 pip install paddlepaddle
