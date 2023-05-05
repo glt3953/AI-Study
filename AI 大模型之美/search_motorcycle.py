@@ -60,7 +60,8 @@ def search(query_text, top_k=5):
 
     return results
 
-query_text = "A suzuki motorcycle"
+#query_text = "A suzuki motorcycle"
+query_text = "A red car"
 results = search(query_text)
 
 # Display the search results

@@ -58,7 +58,8 @@ def search(query_text, top_k=5):
 
     return results
 
-query_text = "A red dress"
+#query_text = "A red dress"
+query_text = "A Blue Jean jacket"
 results = search(query_text)
 
 # Display the search results
