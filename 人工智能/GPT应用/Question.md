@@ -19,3 +19,10 @@ negative_prompt = "EasyNegative, extra fingers,fewer fingers,"
 2. prompt = "Pixar style, motorcycle, road, summer, mountains, trees"
 3. prompt = "帅小伙，张开双臂，蓝天、白云，黄土高坡，微笑，意气风发"
 4. prompt = "Handsome guy with open arms, blue sky, white clouds, loess high slope, smiling, high-spirited"
+5. 根据这张图片生成一张包含同样元素的皮克斯风格图片
+6. 根据原始图片生成一张类似的宫崎骏风格图片
+7. 以这张图片为原型，生成一张皮克斯风格的卡通人物
+8. 以这张图片为原型，生成一张宫崎骏风格的卡通人物
+9. a man in a white shirt and a blue background
+10. a young girl is holding a carrot in her hand
+11. a girl in a pink shirt and jeans stands in front of a tree
