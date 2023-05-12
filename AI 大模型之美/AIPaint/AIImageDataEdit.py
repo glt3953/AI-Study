@@ -10,7 +10,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def paint(prompt):
     try:
         # Read the image file from disk and resize it
-        source_image = Image.open("source.png")
+        source_image = Image.open("19.png")
         width, height = 1024, 1024
         source_image = source_image.resize((width, height))
 
@@ -20,7 +20,7 @@ def paint(prompt):
         source_byte_array = byte_stream.getvalue()
         
         # Read the image file from disk and resize it
-        mask_image = Image.open("mask.png")
+        mask_image = Image.open("19_mask.png")
         width, height = 1024, 1024
         mask_image = mask_image.resize((width, height))
 

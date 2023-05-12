@@ -12,7 +12,7 @@ def paint():
         #三月春归，草长莺飞。伴着疫情的寒冬远去，一个崭新的春天正在走近。和春天一起回归的，还有林野间的绚烂山桃花海。
         #落花人独立，微雨燕双飞。
         response = openai.Image.create_variation(
-            image=open("motorbike.png", "rb"),
+            image=open("22.png", "rb"),
             n=1,
             size="1024x1024"
         )

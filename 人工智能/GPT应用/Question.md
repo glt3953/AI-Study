@@ -14,16 +14,76 @@ https://huggingface.co/spaces/stabilityai/stable-diffusion
 
 1. A handsome guy speeds down the road on a Suzuki GSX250
 2. prompt = "Pixar style, A couple, male in a linen gray leather coat and female in a light blue coat, in a spring park"
-negative_prompt = "EasyNegative, extra fingers,fewer fingers,"
-1. prompt = "ghibli style, handsome guy, blue sky, loess high slope"
-2. prompt = "Pixar style, motorcycle, road, summer, mountains, trees"
-3. prompt = "帅小伙，张开双臂，蓝天、白云，黄土高坡，微笑，意气风发"
-4. prompt = "Handsome guy with open arms, blue sky, white clouds, loess high slope, smiling, high-spirited"
-5. 根据这张图片生成一张包含同样元素的皮克斯风格图片
-6. 根据原始图片生成一张类似的宫崎骏风格图片
-7. 以这张图片为原型，生成一张皮克斯风格的卡通人物图片（Use this picture as a prototype to generate a Pixar-style cartoon character picture）
-8. 以这张图片为原型，生成一张宫崎骏风格的卡通人物图片（Use this picture as a prototype to generate a Ghibli style cartoon character picture）
-9. a man in a white shirt and a blue background
-10. a cute young girl in a pink sweater and jeans, stands in front of a tree, holding a small orange in her hand, smile for the camera
-11. 丰富这张图片的色彩（Enrich the color of this image）
-12. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
+3. negative_prompt = "EasyNegative, extra fingers,fewer fingers,"
+4. prompt = "ghibli style, handsome guy, blue sky, loess high slope"
+5. prompt = "Pixar style, motorcycle, road, summer, mountains, trees"
+6. prompt = "帅小伙，张开双臂，蓝天、白云，黄土高坡，微笑，意气风发"
+7. prompt = "Handsome guy with open arms, blue sky, white clouds, loess high slope, smiling, high-spirited"
+8. 根据这张图片生成一张包含同样元素的皮克斯风格图片
+9. 根据原始图片生成一张类似的宫崎骏风格图片
+10. 以这张图片为原型，生成一张皮克斯风格的卡通人物图片（Use this picture as a prototype to generate a Pixar-style cartoon character picture）
+11. 以这张图片为原型，生成一张宫崎骏风格的卡通人物图片（Use this picture as a prototype to generate a Ghibli style cartoon character picture）
+12. a man in a white shirt and a blue background
+13. a cute young girl in a pink sweater and jeans, stands in front of a tree, holding a small orange in her hand, smile for the camera
+14. 丰富这张图片的色彩（Enrich the color of this image）
+15. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
+16. 帮我起10个关于ChatGPT内容的标题，用中文，希望结合《山海经》里的故事，能最大程度地传播，还有技术调性，增加一些AI和对话的属性，受众群体是CTO和CIO
+17. 这里是10个结合《山海经》故事与技术属性的中文ChatGPT标题:
+    1. 山海智者:人工智能的新境界
+    2. 方壮知行:聊天机器人的新思维 
+    3. 夸父数智:洞察力的新高度 
+    4. 蚩尤决策:智慧的新选择
+    5. 鲧禹谋略:沟通的新视角
+    6. 伶人交流:智能的新体验
+    7. 羿睿思:洞见的新深度
+    8. HouYi洞察:思维的新高峰
+    9. 大禹聚智: cognify的新力量
+    10. 女娲智慧:机器人的新起点 
+18. 帮我起名，三个字，姓“郭”，中间一个“宝”字，尽量跟中国历史人物或传统文化靠近
+    1. 郭宝融：取“文融武茂”之意，出自唐代名将郭子仪的诗句。
+    2. 郭宝瑞：取“国泰民安、家瑞万贯”之意，寓意富裕兴旺。
+    3. 郭宝强：取“勇猛果敢、英勇无畏”之意，出自古代著名将领岳飞的名句。
+    4. 郭宝初：取“初心不改、初出茅庐”之意，寓意拥有坚定的初心和不断进取的精神。
+    5. 郭宝诚：取“诚实守信、言行一致”之意，寓意为人正直、待人诚恳。
+    6. 郭宝良：取“德良行善、品德高尚”之意，寓意品德高尚、行为端正。
+    7. 郭宝哲：取“哲学家、思想家”之意，寓意睿智、思维敏捷。
+    8. 郭宝德：取“德高望重、品行端正”之意，寓意为人正直、品德高尚。
+    9. 郭宝义：取“忠诚正义、守护真理”之意，寓意为人忠诚、正直。
+    10. 郭宝仁：取“仁爱之心、关爱他人”之意，寓意慈悲仁爱、乐于助人。
+    11. 郭宝成(成宝 - 古琴名)
+    12. 郭宝文(文宝 - 古书名) 
+    13. 郭宝福(福宝 - 吉祥美名)
+    14. 郭宝桢(桢宝 - 古代官职名)
+    15. 郭宝琛(琛宝 - 古代诗人名)
+    16. 郭宝璋(璋宝 - 古代杯名)
+    17. 郭宝展(展宝 - 古书名)
+    18. 郭宝昌(昌宝 - 古代地名) 
+    19. 郭宝耀(耀宝 - 古代光耀美名)
+    20. 郭宝钧(钧宝 - 古代重器名)
+    21. 郭宝祥
+    22. 郭宝峰
+    23. 郭宝华
+    24. 郭宝宇
+    25. 郭宝坤
+    26. 郭宝铭
+    27. 郭宝珍
+    28. 郭宝琳
+    29. 郭宝玉
+    30. 郭宝璋
+    31. 郭宝伦
+    32. 郭宝强
+    33. 郭宝明
+    34. 郭宝刚
+    35. 郭宝林
+    36. 郭宝辉
+    37. 郭宝勇
+    38. 郭宝昌
+    39. 郭宝达
+    40. 郭宝富
+    41. 郭宝财
+    42. 郭宝龙
+    43. 郭宝鹏
+    44. 郭宝义
+    45. 郭宝栋
+    46. 郭宝泉
+    47. 郭宝顺

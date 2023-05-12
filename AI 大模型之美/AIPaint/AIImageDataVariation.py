@@ -10,7 +10,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def paint():
     try:
         # Read the image file from disk and resize it
-        image = Image.open("messi 3d character cartoon disney pixar render.jpg")
+        image = Image.open("21.png")
         width, height = 1024, 1024
         image = image.resize((width, height))
 
