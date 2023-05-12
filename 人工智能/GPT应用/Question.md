@@ -21,8 +21,9 @@ negative_prompt = "EasyNegative, extra fingers,fewer fingers,"
 4. prompt = "Handsome guy with open arms, blue sky, white clouds, loess high slope, smiling, high-spirited"
 5. 根据这张图片生成一张包含同样元素的皮克斯风格图片
 6. 根据原始图片生成一张类似的宫崎骏风格图片
-7. 以这张图片为原型，生成一张皮克斯风格的卡通人物
-8. 以这张图片为原型，生成一张宫崎骏风格的卡通人物
+7. 以这张图片为原型，生成一张皮克斯风格的卡通人物图片（Use this picture as a prototype to generate a Pixar-style cartoon character picture）
+8. 以这张图片为原型，生成一张宫崎骏风格的卡通人物图片（Use this picture as a prototype to generate a Ghibli style cartoon character picture）
 9. a man in a white shirt and a blue background
-10. a young girl is holding a carrot in her hand
-11. a girl in a pink shirt and jeans stands in front of a tree
+10. a cute young girl in a pink sweater and jeans, stands in front of a tree, holding a small orange in her hand, smile for the camera
+11. 丰富这张图片的色彩（Enrich the color of this image）
+12. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
