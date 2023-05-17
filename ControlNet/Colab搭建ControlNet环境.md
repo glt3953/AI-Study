@@ -18,9 +18,9 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 ```
 3. 下载模型到models目录
 ```
-!wget https://huggingface.co/lllyasviel/ControlNet/resolve/38a62cbf79862c1bac73405ec8dc46133aee3e36/models/control_sd15_mlsd.pth
-!mv control_sd15_mlsd.pth models/
-!pwd
+!wget https://huggingface.co/lllyasviel/ControlNet/resolve/38a62cbf79862c1bac73405ec8dc46133aee3e36/models/control_sd15_mlsd.pth -P models/
+#!mv control_sd15_mlsd.pth models/
+#!pwd
 !ls models
 ```
 4. 安装依赖库
@@ -44,9 +44,10 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 !get_ipython().system_raw('./ngrok http 7860 &')
 ! curl -s http://localhost:4040/api/tunnels | python3 -c "import sys, json; print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
 ```
-映射的地址如下
-https://1b8c-34-124-225-231.ngrok-free.app/
+映射的地址在https://dashboard.ngrok.com/tunnels/agents中查询
 6. 运行代码
 ```
+import subprocess
+ngrok_process = subprocess.Popen('./ngrok http 7860', shell=True)  
 !python gradio_hough2image.py
 ```
