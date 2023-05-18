@@ -62,6 +62,7 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 !./ngrok authtoken 2PuPonHwFQpdeht3WZFgMlQDRuw_2YkcaMrbuG5pjg9jTzkT5
 import subprocess
 ngrok_process = subprocess.Popen('./ngrok http 7860', shell=True)  
+#映射的地址在https://dashboard.ngrok.com/tunnels/agents 中查询
 
 !python gradio_hough2image.py
 ```
