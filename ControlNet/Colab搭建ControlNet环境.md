@@ -1,6 +1,15 @@
 # Colab搭建ControlNet环境
 ## Git地址
 https://github.com/lllyasviel/ControlNet
+https://github.com/camenduru/controlnet-colab
+https://github.com/camenduru/stable-diffusion-webui-colab
+## 扩展阅读
+https://www.uisdc.com/stable-diffusion-2
+## 相关网站
+https://promptomania.com/
+https://www.urania.ai/top-sd-artists
+https://stableres.info/
+https://civitai.com/
 ## Colab示例
 https://colab.research.google.com/drive/12Uuq5Mz0vW68FHDKAmHmn2cs3vxQ0R4K#scrollTo=muwu2bF7q5eP
 ## 搭建流程
@@ -33,7 +42,7 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 !pip install omegaconf
 !pip install basicsr
 ```
-5. 使用 ngrok 映射到Colab端口
+5. 使用 ngrok 映射到Colab端口（此设置大多数情况下报错，直接跳过）
 ```
 !wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 !unzip ngrok-stable-linux-amd64.zip
@@ -44,10 +53,16 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 !get_ipython().system_raw('./ngrok http 7860 &')
 ! curl -s http://localhost:4040/api/tunnels | python3 -c "import sys, json; print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
 ```
-映射的地址在https://dashboard.ngrok.com/tunnels/agents中查询
-6. 运行代码
+6. 使用 ngrok 映射到Colab端口运行代码
 ```
+!wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+!unzip ngrok-stable-linux-amd64.zip
+#获取token https://dashboard.ngrok.com/get-started/your-authtoken
+#验证token
+!./ngrok authtoken 2PuPonHwFQpdeht3WZFgMlQDRuw_2YkcaMrbuG5pjg9jTzkT5
 import subprocess
 ngrok_process = subprocess.Popen('./ngrok http 7860', shell=True)  
+
 !python gradio_hough2image.py
 ```
+映射的地址在https://dashboard.ngrok.com/tunnels/agents中查询
