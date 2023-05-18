@@ -65,4 +65,4 @@ ngrok_process = subprocess.Popen('./ngrok http 7860', shell=True)
 
 !python gradio_hough2image.py
 ```
-映射的地址在https://dashboard.ngrok.com/tunnels/agents中查询
+映射的地址在https://dashboard.ngrok.com/tunnels/agents 中查询
