@@ -1,6 +1,7 @@
 # Colab搭建ControlNet环境
 ## Git地址
 https://github.com/lllyasviel/ControlNet
+https://github.com/lllyasviel/ControlNet-v1-1-nightly
 https://github.com/camenduru/controlnet-colab
 https://github.com/camenduru/stable-diffusion-webui-colab
 ## 扩展阅读
@@ -12,6 +13,7 @@ https://stableres.info/
 https://civitai.com/
 ## Colab示例
 https://colab.research.google.com/drive/12Uuq5Mz0vW68FHDKAmHmn2cs3vxQ0R4K#scrollTo=muwu2bF7q5eP
+https://colab.research.google.com/drive/1Lr-pX6lZ2E_oe6iEo4hMHegegy14EvDS#scrollTo=muwu2bF7q5eP
 ## 搭建流程
 1. 安装Git环境
 ```
