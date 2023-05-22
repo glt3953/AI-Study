@@ -4,6 +4,7 @@ https://github.com/lllyasviel/ControlNet-v1-1-nightly
 ## 扩展阅读
 https://www.uisdc.com/stable-diffusion-2
 ## 相关网站
+https://huggingface.co/spaces/hysts/ControlNet-v1-1
 https://replicate.com/jagilley
 https://promptomania.com/
 https://www.urania.ai/top-sd-artists
