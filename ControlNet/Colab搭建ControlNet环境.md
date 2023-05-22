@@ -27,14 +27,7 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 
 %cd /content/repo/ControlNet
 ```
-3. 下载模型到models目录
-```
-!wget https://huggingface.co/lllyasviel/ControlNet/resolve/38a62cbf79862c1bac73405ec8dc46133aee3e36/models/control_sd15_mlsd.pth -P models/
-#!mv control_sd15_mlsd.pth models/
-#!pwd
-!ls models
-```
-4. 安装依赖库
+3. 安装依赖库
 ```
 !pip install einops
 !pip install transformers
@@ -44,24 +37,23 @@ git.Repo.clone_from('https://github.com/lllyasviel/ControlNet.git', '/content/re
 !pip install omegaconf
 !pip install basicsr
 ```
-5. 使用 ngrok 映射到Colab端口（此设置大多数情况下报错，直接跳过）
+4. 配置 ngrok 环境
 ```
 !wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 !unzip ngrok-stable-linux-amd64.zip
 #获取token https://dashboard.ngrok.com/get-started/your-authtoken
 #验证token
 !./ngrok authtoken 2PuPonHwFQpdeht3WZFgMlQDRuw_2YkcaMrbuG5pjg9jTzkT5
-#开启ngrok service，绑定port(这里指定7860)
-!get_ipython().system_raw('./ngrok http 7860 &')
-! curl -s http://localhost:4040/api/tunnels | python3 -c "import sys, json; print(json.load(sys.stdin)['tunnels'][0]['public_url'])"
+```
+5. 下载模型到models目录
+```
+!wget https://huggingface.co/lllyasviel/ControlNet/resolve/38a62cbf79862c1bac73405ec8dc46133aee3e36/models/control_sd15_mlsd.pth -P models/
+#!mv control_sd15_mlsd.pth models/
+#!pwd
+!ls models
 ```
 6. 使用 ngrok 映射到Colab端口运行代码
 ```
-!wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-!unzip ngrok-stable-linux-amd64.zip
-#获取token https://dashboard.ngrok.com/get-started/your-authtoken
-#验证token
-!./ngrok authtoken 2PuPonHwFQpdeht3WZFgMlQDRuw_2YkcaMrbuG5pjg9jTzkT5
 import subprocess
 ngrok_process = subprocess.Popen('./ngrok http 7860', shell=True)  
 #映射的地址在https://dashboard.ngrok.com/tunnels/agents 中查询
