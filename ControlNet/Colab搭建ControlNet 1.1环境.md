@@ -74,6 +74,7 @@ python gradio_canny.py
 ### MLSD - 室内设计
 python gradio_mlsd.py
 模型文件：control_v11p_sd15_mlsd.pth
+
 ### Scribble - 涂鸦创作
 #### To test synthesized scribbles
 python gradio_scribble.py

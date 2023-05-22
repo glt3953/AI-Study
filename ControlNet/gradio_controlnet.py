@@ -1,11 +1,11 @@
 from gradio_client import Client
 
-client = Client("https://ec58-34-143-214-49.ngrok-free.app/")
+client = Client("https://b05c-34-83-211-102.ngrok-free.app/")
 result = client.predict(
-                "SoftEdge_PIDI",    # str  in 'Preprocessor' Radio component,SoftEdge_PIDI,SoftEdge_HED
+                "Normal_BAE",    # str  in 'Preprocessor' Radio component,Normal_BAE,SoftEdge_PIDI,SoftEdge_HED
 #                "https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png",    # str (filepath or URL to image) in 'parameter_5' Image component
-                "22_head.png",
-                "chinese painting of beautiful young woman in a pink sweater, holding a small orange in her hand, black hair, masterpiece",    # str  in 'Prompt' Textbox component
+                "person-leaves.png", #IMG_8298.JPG, 证件照.jpg
+                "a boy made of flowers",    # str  in 'Prompt' Textbox component
                 "best quality",    # str  in 'Added Prompt' Textbox component
                 "lowres, bad anatomy, bad hands, cropped, worst quality",    # str  in 'Negative Prompt' Textbox component
                 1,    # int | float (numeric value between 1 and 12) in 'Images' Slider component
@@ -17,7 +17,7 @@ result = client.predict(
                 9,    # int | float (numeric value between 0.1 and 30.0) in 'Guidance Scale' Slider component
                 12345,    # int | float (numeric value between -1 and 2147483647) in 'Seed' Slider component
                 1,    # int | float (numeric value between 0.0 and 1.0) in 'DDIM ETA' Slider component
-                False,    # bool  in 'Safe' Checkbox component
+#                False,    # bool  in 'Safe' Checkbox component
                 fn_index=0
 )
 print(result)

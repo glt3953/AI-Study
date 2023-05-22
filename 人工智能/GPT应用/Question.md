@@ -21,26 +21,33 @@ https://huggingface.co/spaces/stabilityai/stable-diffusion
 7. prompt = "Handsome guy with open arms, blue sky, white clouds, loess high slope, smiling, high-spirited"
 8. 根据这张图片生成一张包含同样元素的皮克斯风格图片
 9. 根据原始图片生成一张类似的宫崎骏风格图片
-10. 以这张图片为原型，生成一张皮克斯风格的卡通人物图片（Use this picture as a prototype to generate a Pixar-style cartoon character picture）
-11. 以这张图片为原型，生成一张宫崎骏风格的卡通人物图片（Use this picture as a prototype to generate a Ghibli style cartoon character picture）
-12. a man in a white shirt and a blue background
-13. Pixar style of several cute cartoon crabs
-14. Pixar style of few cartoon roses
-15. a cute young girl in a pink sweater and jeans, stands in front of a tree, holding a small orange in her hand, smile for the camera
-16. oil painting of handsome young man, white shirt, masterpiece
-17. blue, green, black, brown, purple, gray
-18. watercolor painting of handsome young man, masterpiece
-19. oil painting of three handsome young mans, masterpiece
-20. oil painting of beautiful young woman in a pink sweater, holding a small orange in her hand, black hair, masterpiece
-21. science fiction, van gogh style, watercolor painting, ink painting, chinese painting, hanfu style, Monkey King style, Tang style, lady portrait style, pixel style, anime style, European and American original painting style, Gongbi style, Retro Style, flat style, Japanese style, trendy manga style, Flat original painting style, high intellectual style, Candy comic style
-22. oil painting of handsome young man, cute young woman, masterpiece
-23. Ghibli style of handsome young man, cute young woman, masterpiece
-24. Pixar style of handsome young man, cute young woman, masterpiece
-25. Cyberpunk robot
-26. 丰富这张图片的色彩（Enrich the color of this image）
-27. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
-28. 帮我起10个关于ChatGPT内容的标题，用中文，希望结合《山海经》里的故事，能最大程度地传播，还有技术调性，增加一些AI和对话的属性，受众群体是CTO和CIO
-29. 我是一名数码产品爱好者，帮我想几个在中国三四线城市创业的点子，跟数码产品、科技相关
+10. Please generate a canny image based on https://github.com/glt3953/AI-Study/blob/main/ControlNet/20.JPG
+11. 以这张图片为原型，生成一张皮克斯风格的卡通人物图片（Use this picture as a prototype to generate a Pixar-style cartoon character picture）
+12. 以这张图片为原型，生成一张宫崎骏风格的卡通人物图片（Use this picture as a prototype to generate a Ghibli style cartoon character picture）
+13. living room, ocean view, cozy lighting, industry style, industry lighting, italian furniture
+14. japanese style furniture, wood floor, wood structure, rigidirty style, japanese style light, ikea style coach, flowers on coffee table, cherry
+15. a man(woman) made of flowers
+16. green canvas(leather) shoe with cherry blossom pattern
+17. yellow leather shoe with Louis Vuitton class pattern
+18. dark brown leather shoe with Louis Vuitton pattern, no shoelace 
+19. a man in a white shirt and a blue background
+20. Pixar style of several cute cartoon crabs
+21. Pixar style of few cartoon roses
+22. a cute young girl in a pink sweater and jeans, stands in front of a tree, holding a small orange in her hand, smile for the camera
+23. oil painting of handsome young man, white shirt, masterpiece
+24. blue, green, black, brown, purple, gray
+25. oil painting of handsome young man, wear a pair of black-rimmed glasses, masterpiece
+26. oil painting of three handsome young mans, masterpiece
+27. oil painting of beautiful young woman in a pink sweater, holding a small orange in her hand, black hair, masterpiece
+28. science fiction, van gogh style, watercolor painting, ink painting, chinese painting, hanfu style, Monkey King style, Tang style, lady portrait style, pixel style, anime style, European and American original painting style, Gongbi style, Retro Style, flat style, Japanese style, trendy manga style, Flat original painting style, high intellectual style, Candy comic style
+29. oil painting of handsome young man, cute young woman, masterpiece
+30. Ghibli style of handsome young man, cute young woman, masterpiece
+31. Pixar style of handsome young man, cute young woman, masterpiece
+32. Cyberpunk robot
+33. 丰富这张图片的色彩（Enrich the color of this image）
+34. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
+35. 帮我起10个关于ChatGPT内容的标题，用中文，希望结合《山海经》里的故事，能最大程度地传播，还有技术调性，增加一些AI和对话的属性，受众群体是CTO和CIO
+36. 我是一名数码产品爱好者，帮我想几个在中国三四线城市创业的点子，跟数码产品、科技相关
     * 数码产品维修服务：在三四线城市开设数码产品维修店，为当地居民提供手机、电脑等数码产品的维修服务。
     * 科技培训机构：开办一家专门从事科技类培训的机构，教授编程、设计、3D打印等相关知识，满足当地居民对于技术人才的需求。
     * 智能家居装置：研发和销售智能家居装置，如温度湿度传感器、智能门锁、环境监测仪等。
