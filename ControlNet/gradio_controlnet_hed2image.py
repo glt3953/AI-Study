@@ -2,8 +2,8 @@ from gradio_client import Client
 
 client = Client("https://50d6-34-90-38-183.ngrok-free.app/")
 result = client.predict(
-                "22_head_big.png", #IMG_8298.JPG, 证件照.jpg, 22_head_big.png, IMG_7111_head.png
-                "Ghibli style cartoon of handsome young woman, masterpiece",    # str  in 'Prompt' Textbox component
+                "IMG_3512_head.png", #IMG_8298.JPG, 证件照.jpg, 22_head_big.png, IMG_7111_head.png, IMG_3512_head.png
+                "oil painting of three handsome young mans, masterpiece",    # str  in 'Prompt' Textbox component
                 "best quality, extremely detailed",    # str  in 'Added Prompt' Textbox component
                 "longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality",    # str  in 'Negative Prompt' Textbox component
                 1,    # int | float (numeric value between 1 and 12) in 'Images' Slider component
