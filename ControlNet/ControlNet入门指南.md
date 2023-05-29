@@ -1,14 +1,16 @@
 # ControlNet入门指南
 ## 体验网址
 https://huggingface.co/spaces/hysts/ControlNet-v1-1
+https://huggingface.co/runwayml/stable-diffusion-v1-5
 ## Git地址
 https://github.com/lllyasviel/ControlNet
 https://github.com/lllyasviel/ControlNet-v1-1-nightly
 ## 扩展阅读
 https://www.uisdc.com/stable-diffusion-2
 https://www.uisdc.com/controlnet
-
-ControlNet 主要有 8 个应用模型：OpenPose、Canny、HED、Scribble、Mlsd、Seg、Normal Map、Depth。以下做简要介绍：
+https://dreamlike.art/
+## 大师风格
+https://www.urania.ai/top-sd-artists
 ## OpenPose 姿势识别
 ![](assets/16853307193722.jpg)
 ![](assets/16853313906941.jpg)
