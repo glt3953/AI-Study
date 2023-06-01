@@ -1,7 +1,10 @@
 # ControlNet入门指南
 ## 体验网址
 https://huggingface.co/spaces/hysts/ControlNet-v1-1
+https://www.modelscope.cn/studios/dienstag/controlnet_controllable-image-generation/summary
+https://www.modelscope.cn/studios/PAI/PromptEng/summary
 https://huggingface.co/runwayml/stable-diffusion-v1-5
+https://modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8E%A8%E7%90%86Pipeline
 ## Git地址
 https://github.com/lllyasviel/ControlNet
 https://github.com/lllyasviel/ControlNet-v1-1-nightly
