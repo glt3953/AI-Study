@@ -14,6 +14,9 @@ https://www.uisdc.com/controlnet
 https://dreamlike.art/
 ## 大师风格
 https://www.urania.ai/top-sd-artists
+## 模型介绍
+![](assets/16857792325954.jpg)
+
 ## OpenPose 姿势识别
 ![](assets/16853307193722.jpg)
 ![](assets/16853313906941.jpg)
