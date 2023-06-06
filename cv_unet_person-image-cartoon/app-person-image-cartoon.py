@@ -52,8 +52,8 @@ if not os.path.exists(user_upload_path):
   os.makedirs(user_upload_path)
 print('用户图片目录：' + user_upload_path)
 
-name_dict = {"日漫风":"anime", "3D风":"3d", "手绘风":"handdrawn", "国漫风":"sd-illustration", "插画风":"sd-design", "原神风":"genshin", "王者荣耀风":"wz"}
-style_dict = {"日漫风":"damo/cv_unet_person-image-cartoon_compound-models", "3D风":"damo/cv_unet_person-image-cartoon-3d_compound-models", "手绘风":"damo/cv_unet_person-image-cartoon-handdrawn_compound-models", "国漫风":"damo/cv_unet_person-image-cartoon-sd-illustration_compound-models", "插画风":"damo/cv_unet_person-image-cartoon-sd-design_compound-models", "原神风":"lskhh/moran-cv_unet_person-image-cartoon-genshin_compound-models", "王者荣耀风":"lskhh/ty_cv_unet_person-image-cartoon-wz_compound-models"}
+name_dict = {"日漫风":"anime", "3D风":"3d", "手绘风":"handdrawn", "国漫风":"sd-illustration", "插画风":"sd-design", "艺术风":"artstyle", "素描风":"sketch", "原神风":"genshin", "王者荣耀风":"wz"}
+style_dict = {"日漫风":"damo/cv_unet_person-image-cartoon_compound-models", "3D风":"damo/cv_unet_person-image-cartoon-3d_compound-models", "手绘风":"damo/cv_unet_person-image-cartoon-handdrawn_compound-models", "国漫风":"damo/cv_unet_person-image-cartoon-sd-illustration_compound-models", "插画风":"damo/cv_unet_person-image-cartoon-sd-design_compound-models", "艺术风":"damo/cv_unet_person-image-cartoon-artstyle_compound-models", "素描风":"damo/cv_unet_person-image-cartoon-sketch_compound-models", "原神风":"lskhh/moran-cv_unet_person-image-cartoon-genshin_compound-models", "王者荣耀风":"lskhh/ty_cv_unet_person-image-cartoon-wz_compound-models"}
 
 # def get_size(h, w, max = 720):
 #     if min(h, w) > max:
@@ -66,7 +66,7 @@ style_dict = {"日漫风":"damo/cv_unet_person-image-cartoon_compound-models", "
 def inference(image: Image, style: str) -> Image:
   utc_dt = datetime.datetime.utcnow()
   beijing_dt = utc_dt.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
-  formatted = beijing_dt.strftime("%Y-%m-%d_%H:%M:%S.%f")
+  formatted = beijing_dt.strftime("%Y-%m-%d_%H-%M-%S.%f")
   image_path = user_upload_path + '/' + formatted + '.png'
   print('用户图片：' + image_path)
   image.save(image_path)
@@ -76,7 +76,7 @@ def inference(image: Image, style: str) -> Image:
 
   utc_dt = datetime.datetime.utcnow()
   beijing_dt = utc_dt.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
-  formatted = beijing_dt.strftime("%Y-%m-%d_%H:%M:%S.%f")
+  formatted = beijing_dt.strftime("%Y-%m-%d_%H-%M-%S.%f")
   result_path = works_path + '/' + name_dict[style] + '_' + formatted + '.png'
   cv2.imwrite(result_path, result[OutputKeys.OUTPUT_IMG])
 
@@ -123,7 +123,7 @@ with gr.Blocks(title=title, css=css_style) as demo:
 
     gr.Markdown(description)
     with gr.Row():
-        radio_style = gr.Radio(label="风格选择", choices=["日漫风", "3D风", "手绘风", "国漫风", "插画风", "原神风", "王者荣耀风"], value="日漫风")
+        radio_style = gr.Radio(label="风格选择", choices=["日漫风", "3D风", "手绘风", "国漫风", "插画风", "艺术风", "素描风", "原神风", "王者荣耀风"], value="日漫风")
     with gr.Row():
         img_input = gr.Image(type="pil", elem_id="fixed_size_img")
         img_output = gr.Image(type="pil", elem_id="fixed_size_img")
@@ -135,4 +135,4 @@ with gr.Blocks(title=title, css=css_style) as demo:
     btn_submit.click(inference, inputs=[img_input, radio_style], outputs=img_output)
     # btn_clear清除画布
 
-demo.launch(debug=True)
+demo.queue(api_open=False, max_size=10).launch(debug=True)
