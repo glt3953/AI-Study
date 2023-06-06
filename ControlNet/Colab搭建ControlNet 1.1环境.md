@@ -1,6 +1,6 @@
 # Colab搭建ControlNet 1.1环境
 ## Git地址
-https://github.com/lllyasviel/ControlNet-v1-1-nightly
+https://github.com/glt3953/ControlNet-v1-1-nightly
 ## 扩展阅读
 https://www.uisdc.com/stable-diffusion-2
 ## 相关网站

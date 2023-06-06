@@ -1,5 +1,6 @@
 #pip install "modelscope[cv]" -f https://modelscope.oss-cn-beijing.aliyuncs.com/releases/repo.html
 #pip install gradio
+#pip install tensorflow
 
 import gradio as gr
 from PIL import Image
@@ -135,4 +136,4 @@ with gr.Blocks(title=title, css=css_style) as demo:
     btn_submit.click(inference, inputs=[img_input, radio_style], outputs=img_output)
     # btn_clear清除画布
 
-demo.queue(api_open=False, max_size=10).launch(debug=True)
+demo.queue(api_open=False, max_size=10).launch(debug=True, share=True)
