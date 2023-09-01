@@ -83,11 +83,12 @@ https://huggingface.co/spaces/stabilityai/stable-diffusion
 34. oil painting of handsome young man, cute young woman, masterpiece
 35. Ghibli style of handsome young man, cute young woman, masterpiece
 36. Pixar style of handsome young man, cute young woman, masterpiece
-37. Cyberpunk robot
-38. 丰富这张图片的色彩（Enrich the color of this image）
-39. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
-40. 帮我起10个关于ChatGPT内容的标题，用中文，希望结合《山海经》里的故事，能最大程度地传播，还有技术调性，增加一些AI和对话的属性，受众群体是CTO和CIO
-41. 我是一名数码产品爱好者，帮我想几个在中国三四线城市创业的点子，跟数码产品、科技相关
+37. Disney Pixar Studios, anime, handsome young man
+38. Cyberpunk robot
+39. 丰富这张图片的色彩（Enrich the color of this image）
+40. 以此张图片为原型，设计一辆炫酷的摩托，颜色丰富一些，具备皮克斯风格，科技感，赛博朋克（Use this picture as a prototype to design a cool motorcycle, richer colors, with Pixar style, technology, cyberpunk）
+41. 帮我起10个关于ChatGPT内容的标题，用中文，希望结合《山海经》里的故事，能最大程度地传播，还有技术调性，增加一些AI和对话的属性，受众群体是CTO和CIO
+42. 我是一名数码产品爱好者，帮我想几个在中国三四线城市创业的点子，跟数码产品、科技相关
     * 数码产品维修服务：在三四线城市开设数码产品维修店，为当地居民提供手机、电脑等数码产品的维修服务。
     * 科技培训机构：开办一家专门从事科技类培训的机构，教授编程、设计、3D打印等相关知识，满足当地居民对于技术人才的需求。
     * 智能家居装置：研发和销售智能家居装置，如温度湿度传感器、智能门锁、环境监测仪等。
